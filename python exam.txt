@@ -1,0 +1,113 @@
+Q.1) Convert given hrs & mins in second
+ans.
+hr=int(input('enter hours'))
+min=int(input('enter min'))
+sec=(hr*3600)+(min*60)
+print('the total second is',sec)
+
+output
+
+enter hours1
+enter min1
+the total second is 3660
+
+Q.2 Create menu driven code for
+
+1) Accept 2 numbers 2) Add 3) Sub 4) Mul 5) Div
+class Math:
+    def __init__(self,a,b):
+        self.a=a #int(input(enter the number))
+        self.b=b #int(input(enter the number))
+    def Add(self):
+        return self.a + self.b
+    def sub(self):
+        return self.a - self.b
+    def sub(self):
+        return self.a * self.b
+    def sub(self):
+        return self.a / self.b
+
+Q.9) Accept String & print only alternate characters on a string. Ex: this i s a _ test
+s=input('enter the string ')
+print(s[1::2])
+
+output
+enter the string this is a test
+hsi  et
+
+
+Q.3) Printf
+1 
+1 0 
+1 0 1 
+1 0 1 0 
+1 0 1 0 1 
+ans.
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j%2,end=" ")
+    print()
+
+output:
+
+1 
+1 0 
+1 0 1 
+1 0 1 0 
+1 0 1 0 1 
+
+Q.7) Convert Paise in Rupees & Paises Exprint Rupees: 3 Paise: 50
+ans;
+p=100
+rs=int(input('enter the amount in rupees : '))
+total = rs*p
+print(total,"paisa")
+
+output
+
+enter the amount in rupees : 40
+4000 paisa
+
+Q.6) Read file & count numbers of digit alphabets & symbols (hint one can compare using ‘a’ < digit < ‘z‘.
+ans.
+a= input('enter a string ')
+d=l=s=0
+for c in a:
+    if c.isdigit():
+        d=d+1
+       
+    elif c.isalpha():
+        l=l+1
+        
+    else:
+        s+s+1
+print('letters',l)    
+print('digits',d) 
+print('symbol',s)
+output-
+
+enter a string mohit
+letters 5
+digits 0
+symbol 0
+
+
+Q.8) Print
+1
+3 3
+5 5 5
+6 6 6 6
+7 7 7 7 7
+ans.
+
+a='13567'
+for i in range(0,len(a)):
+    print(a[i]*(i+1))
+ans.
+output
+1
+3 3
+5 5 5
+6 6 6 6
+7 7 7 7 7
