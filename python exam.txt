@@ -14,18 +14,30 @@ the total second is 3660
 Q.2 Create menu driven code for
 
 1) Accept 2 numbers 2) Add 3) Sub 4) Mul 5) Div
-class Math:
-    def __init__(self,a,b):
-        self.a=a #int(input(enter the number))
-        self.b=b #int(input(enter the number))
-    def Add(self):
-        return self.a + self.b
-    def sub(self):
-        return self.a - self.b
-    def sub(self):
-        return self.a * self.b
-    def sub(self):
-        return self.a / self.b
+num1=float(input("Enter first number "))
+num2=float(input("Enter second number "))
+print("Enter which op to perform")
+ch=input("Enter the operation +,-,*,/:")
+result=0
+if ch == '+':
+  result = num1+num2
+elif ch == '-':
+  result = num1-num2
+elif ch == '*':
+  result = num1*num2
+elif ch == '/':
+  result = num1/num2
+else:
+  print("Invalid input")
+
+
+print(num1,ch,num2, ':',result)
+output:
+Enter first number 6
+Enter second number 7
+Enter which op to perform
+Enter the operation +,-,*,/:+
+6.0 + 7.0 : 13.0
 
 Q.9) Accept String & print only alternate characters on a string. Ex: this i s a _ test
 s=input('enter the string ')
